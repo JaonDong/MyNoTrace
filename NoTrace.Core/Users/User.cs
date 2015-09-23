@@ -1,7 +1,11 @@
-﻿using Abp.Authorization;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using Abp.Authorization;
+using NoTrace.MultiTenancy;
+
 namespace NoTrace.Users
 {
-    public class User
+    [Table("Users")]
+    public class User:MyAbpUser<Tenant,User>
     {
          
     }
