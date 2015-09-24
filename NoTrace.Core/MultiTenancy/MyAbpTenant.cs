@@ -6,8 +6,8 @@ using NoTrace.Users;
 namespace NoTrace.MultiTenancy
 {
     public abstract class MyAbpTenant<TTenant, TUser> : FullAuditedEntity<int, TUser>, IPassivable
-        where TTenant: MyAbpTenant<TTenant,TUser>
-        where TUser:MyAbpUser<TTenant,TUser>
+        where TTenant : MyAbpTenant<TTenant, TUser>
+        where TUser : MyAbpUser<TTenant, TUser>
     {
         #region Fields
 

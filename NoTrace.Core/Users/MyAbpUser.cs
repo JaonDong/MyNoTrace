@@ -8,16 +8,16 @@ using NoTrace.MultiTenancy;
 
 namespace NoTrace.Users
 {
-    public abstract class MyAbpUser<TTenant,TUser> : FullAuditedEntity<long, TUser>,IUser<long>, IPassivable
-        where TTenant:MyAbpTenant<TTenant,TUser>
-       where TUser : MyAbpUser<TTenant,TUser>
+    public abstract class MyAbpUser<TTenant, TUser> : FullAuditedEntity<long, TUser>, IUser<long>, IPassivable
+        where TTenant : MyAbpTenant<TTenant, TUser>
+        where TUser : MyAbpUser<TTenant, TUser>
     {
 
         #region Fields
 
         #region only data field
         [Required]
-        public string UserName { get; set; } 
+        public string UserName { get; set; }
         [Required]
         public string EmailAddress { get; set; }
         [Required]
@@ -47,12 +47,12 @@ namespace NoTrace.Users
         public MyAbpUser()
         {
             IsActive = true;
-        } 
+        }
         #endregion
 
         #region Navigation property
         [ForeignKey("TenatId")]
-        public virtual TTenant Tenant { get; set; } 
+        public virtual TTenant Tenant { get; set; }
         #endregion
     }
 }

@@ -7,7 +7,7 @@ using NoTrace.Users;
 
 namespace NoTrace.EntityFramework
 {
-    public class MyAbpDbContext<TTenant,TUser,TRole>:AbpDbContext
+    public class MyAbpDbContext<TTenant, TUser, TRole> : AbpDbContext
         where TTenant : MyAbpTenant<TTenant, TUser>
         where TUser : MyAbpUser<TTenant, TUser>
         where TRole : MyAbpRole<TTenant, TUser>
@@ -16,9 +16,9 @@ namespace NoTrace.EntityFramework
 
         public virtual IDbSet<TTenant> Tenants { get; set; }
         public virtual IDbSet<TUser> Users { get; set; }
-        public virtual IDbSet<TRole> Roles { get; set; }  
-        
-        public virtual IDbSet<UserLogin> UserLogins { get; set; }  
+        public virtual IDbSet<TRole> Roles { get; set; }
+
+        public virtual IDbSet<UserLogin> UserLogins { get; set; }
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.
@@ -37,7 +37,8 @@ namespace NoTrace.EntityFramework
 
         }
 
-        public MyAbpDbContext(DbConnection dbConnection, bool contextOwnsConnection) : base(dbConnection, contextOwnsConnection)
+        public MyAbpDbContext(DbConnection dbConnection, bool contextOwnsConnection)
+            : base(dbConnection, contextOwnsConnection)
         {
 
         }

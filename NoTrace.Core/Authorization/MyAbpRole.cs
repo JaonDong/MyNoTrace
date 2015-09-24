@@ -18,9 +18,9 @@ namespace NoTrace.Authorization
     /// Non-static (dynamic) roles can be added/removed by users and we can not know their name while coding.
     /// A user can have multiple roles. Thus, user will have all permissions of all assigned roles.
     /// </remarks>
-    public abstract class MyAbpRole<TTenant,TUser>:FullAuditedEntity<int,TUser>,IRole<int>
-        where TTenant:MyAbpTenant<TTenant,TUser>
-        where TUser:MyAbpUser<TTenant,TUser>
+    public abstract class MyAbpRole<TTenant, TUser> : FullAuditedEntity<int, TUser>, IRole<int>
+        where TTenant : MyAbpTenant<TTenant, TUser>
+        where TUser : MyAbpUser<TTenant, TUser>
     {
         #region Fields
         #region Only data fields
@@ -40,7 +40,7 @@ namespace NoTrace.Authorization
         /// <summary>
         /// Is this role will be assigned to new users as default?
         /// </summary>
-        public virtual bool IsDefault { get; set; } 
+        public virtual bool IsDefault { get; set; }
         #endregion
 
         public MyAbpRole()

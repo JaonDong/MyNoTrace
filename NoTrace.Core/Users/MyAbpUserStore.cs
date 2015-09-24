@@ -13,25 +13,25 @@ using NoTrace.MultiTenancy;
 
 namespace NoTrace.Users
 {
-    public abstract class MyAbpUserStore<TTenant, TRole, TUser> : 
-        IUserStore<TUser,long>,
-        IUserPasswordStore<TUser,long>,
-        IUserEmailStore<TUser,long> ,
-        IUserLockoutStore<TUser,long>,
-        IUserLoginStore<TUser,long> ,
-        IQueryableUserStore<TUser,long> ,
-        IUserRoleStore<TUser,long>,
+    public abstract class MyAbpUserStore<TTenant, TRole, TUser> :
+        IUserStore<TUser, long>,
+        IUserPasswordStore<TUser, long>,
+        IUserEmailStore<TUser, long>,
+        IUserLockoutStore<TUser, long>,
+        IUserLoginStore<TUser, long>,
+        IQueryableUserStore<TUser, long>,
+        IUserRoleStore<TUser, long>,
         ITransientDependency
         where TUser : MyAbpUser<TTenant, TUser>
         where TTenant : MyAbpTenant<TTenant, TUser>
-        where TRole:MyAbpRole<TTenant,TUser>
+        where TRole : MyAbpRole<TTenant, TUser>
     {
         #region Fields
         private readonly IRepository<TUser, long> _userRepository;
         private readonly IRepository<TRole> _roleRepository;
         private readonly IAbpSession _abpSession;
         private readonly IUnitOfWorkManager _unitOfWorkManager;
-        private readonly IRepository<UserLogin,long> _userLoginRepository;
+        private readonly IRepository<UserLogin, long> _userLoginRepository;
         private readonly IRepository<UserRole, long> _userRolerRepository;
         #endregion
 
@@ -42,8 +42,8 @@ namespace NoTrace.Users
            IRepository<TRole> roleRepository,
            IAbpSession abpSession,
            IUnitOfWorkManager unitOfWorkManager,
-           IRepository<UserLogin,long> userLoginRepository,
-           IRepository<UserRole,long> userRoleRepository  
+           IRepository<UserLogin, long> userLoginRepository,
+           IRepository<UserRole, long> userRoleRepository
            )
         {
             _userRepository = userRepository;
@@ -52,12 +52,16 @@ namespace NoTrace.Users
             _unitOfWorkManager = unitOfWorkManager;
             _userLoginRepository = userLoginRepository;
             _userRolerRepository = userRoleRepository;
-        }  
+        }
         #endregion
 
         #region QueryableUser
 
-        public virtual IQueryable<TUser> Users => _userRepository.GetAll();
+        public virtual IQueryable<TUser> Users
+        {
+            get { return _userRepository.GetAll(); }
+        }
+
 
         #endregion
 
@@ -107,7 +111,7 @@ namespace NoTrace.Users
 
         public virtual Task<bool> HasPasswordAsync(TUser user)
         {
-            return Task.FromResult(string.IsNullOrEmpty(user.Password));                 
+            return Task.FromResult(string.IsNullOrEmpty(user.Password));
         }
         #endregion
 
@@ -205,7 +209,7 @@ namespace NoTrace.Users
         public virtual async Task<IList<UserLoginInfo>> GetLoginsAsync(TUser user)
         {
             return (await _userLoginRepository.GetAllListAsync(ul => ul.UserId == user.Id))
-                .Select(ul => new UserLoginInfo( ul.LoginProvider, ul.ProviderKey))
+                .Select(ul => new UserLoginInfo(ul.LoginProvider, ul.ProviderKey))
                 .ToList();
         }
 
@@ -225,7 +229,7 @@ namespace NoTrace.Users
         #region Role
         public virtual async Task AddToRoleAsync(TUser user, string roleName)
         {
-            var role =await _roleRepository.SingleAsync(r => r.Name == roleName);
+            var role = await _roleRepository.SingleAsync(r => r.Name == roleName);
             await _userRolerRepository.InsertAsync(new UserRole(user.Id, role.Id));
         }
 
@@ -240,9 +244,9 @@ namespace NoTrace.Users
             await _userRolerRepository.DeleteAsync(userRole);
         }
 
-        public virtual  Task<IList<string>> GetRolesAsync(TUser user)
+        public virtual Task<IList<string>> GetRolesAsync(TUser user)
         {
-            var roleNameList =  _userRolerRepository.Query(userRoles => (
+            var roleNameList = _userRolerRepository.Query(userRoles => (
                 from userRole in userRoles
                 join role in _roleRepository.GetAll()
                     on userRole.RoleId equals role.Id
@@ -258,7 +262,7 @@ namespace NoTrace.Users
             var role = await _roleRepository.SingleAsync(r => r.Name == roleName);
             return role != null &&
                    (await _userRolerRepository.SingleAsync(ur => ur.RoleId == role.Id && ur.UserId == user.Id) != null);
-        } 
+        }
         #endregion
     }
 }

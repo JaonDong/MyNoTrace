@@ -1,16 +1,21 @@
-﻿using Abp.EntityFramework;
+﻿using System.Data.Entity;
+using Abp.EntityFramework;
 using NoTrace.Authorization;
 using NoTrace.MultiTenancy;
 using NoTrace.Users;
 
 namespace NoTrace.EntityFramework
 {
-    public class NoTraceDbContext : MyAbpDbContext<Tenant,User,Role>
+    public class NoTraceDbContext : AbpDbContext
     {
         //TODO: Define an IDbSet for each Entity...
 
-        //Example:
-        //public virtual IDbSet<User> Users { get; set; }
+        public virtual IDbSet<Tenant> Tenants { get; set; }
+        public virtual IDbSet<User> Users { get; set; }
+        public virtual IDbSet<Role> Roles { get; set; }
+
+        public virtual IDbSet<UserLogin> UserLogins { get; set; }
+
 
         /* NOTE: 
          *   Setting "Default" to base class helps us when working migration commands on Package Manager Console.

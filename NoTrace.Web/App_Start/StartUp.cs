@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
+using NoTrace.Web;
 using Owin;
-
+[assembly: OwinStartup(typeof(StartUp))]
 namespace NoTrace.Web
 {
     public class StartUp
