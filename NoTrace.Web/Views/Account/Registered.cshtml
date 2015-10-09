@@ -1,0 +1,24 @@
+﻿@using System.Text
+@model NoTrace.Users.Dtos.UserDto
+@{
+    ViewBag.Title = "Registered";
+}
+
+<h2>Registered</h2>
+
+@using (Html.BeginForm("Registered","Account",FormMethod.Post))
+{
+    <div class="form-group">
+        <label>User Name</label>
+        @Html.TextBoxFor(model => model.UserName, new {@class = "form-control", placeholder = "user name"})
+    </div>
+    <div class="form-group">
+        <label>email address</label>
+        @Html.TextBoxFor(model => model.EmailAddress, new {@class = "form-control", placeholder = "email address"})
+    </div>
+    <div class="form-group">
+        <label>password</label>
+        @Html.TextBoxFor(model => model.Password, new {@class = "form-control", placeholder = "password"})
+    </div>
+   <button class="btn btn-danger" type="submit">Register</button>
+}

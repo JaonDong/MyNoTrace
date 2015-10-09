@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity;
 using Abp.EntityFramework;
 using NoTrace.Authorization;
+using NoTrace.Menus;
 using NoTrace.MultiTenancy;
 using NoTrace.Users;
 
@@ -15,6 +16,9 @@ namespace NoTrace.EntityFramework
         public virtual IDbSet<Role> Roles { get; set; }
 
         public virtual IDbSet<UserLogin> UserLogins { get; set; }
+
+        public virtual IDbSet<UserRole> UserRoles { get; set; } 
+        public virtual IDbSet<Menu> Menus { get; set; }
 
 
         /* NOTE: 

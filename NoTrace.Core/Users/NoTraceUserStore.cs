@@ -11,11 +11,13 @@ namespace NoTrace.Users
         public NoTraceUserStore(
             IRepository<User, long> userRepository,
             IRepository<Role> roleRepository,
-            IAbpSession abpSession,
+           // IAbpSession abpSession,
             IUnitOfWorkManager unitOfWorkManager,
             IRepository<UserLogin, long> userLoginRepository,
             IRepository<UserRole, long> userRoleRepository)
-            : base(userRepository, roleRepository, abpSession, unitOfWorkManager, userLoginRepository, userRoleRepository)
+            : base(userRepository, roleRepository, 
+                  //abpSession, 
+                  unitOfWorkManager, userLoginRepository, userRoleRepository)
         {
         }
     }

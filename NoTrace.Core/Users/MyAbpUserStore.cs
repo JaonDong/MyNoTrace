@@ -29,7 +29,7 @@ namespace NoTrace.Users
         #region Fields
         private readonly IRepository<TUser, long> _userRepository;
         private readonly IRepository<TRole> _roleRepository;
-        private readonly IAbpSession _abpSession;
+       // private readonly IAbpSession _abpSession;
         private readonly IUnitOfWorkManager _unitOfWorkManager;
         private readonly IRepository<UserLogin, long> _userLoginRepository;
         private readonly IRepository<UserRole, long> _userRolerRepository;
@@ -40,7 +40,7 @@ namespace NoTrace.Users
         protected MyAbpUserStore(
            IRepository<TUser, long> userRepository,
            IRepository<TRole> roleRepository,
-           IAbpSession abpSession,
+          // IAbpSession abpSession,
            IUnitOfWorkManager unitOfWorkManager,
            IRepository<UserLogin, long> userLoginRepository,
            IRepository<UserRole, long> userRoleRepository
@@ -48,7 +48,7 @@ namespace NoTrace.Users
         {
             _userRepository = userRepository;
             _roleRepository = roleRepository;
-            _abpSession = abpSession;
+           // _abpSession = abpSession;
             _unitOfWorkManager = unitOfWorkManager;
             _userLoginRepository = userLoginRepository;
             _userRolerRepository = userRoleRepository;
@@ -88,7 +88,7 @@ namespace NoTrace.Users
 
         public virtual async Task<TUser> FindByNameAsync(string userName)
         {
-            return await _userRepository.SingleAsync(u => u.UserName == userName);
+            return await _userRepository.FirstOrDefaultAsync(u => u.UserName == userName);
         }
 
         public virtual async Task UpdateAsync(TUser user)

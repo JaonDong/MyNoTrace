@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div id="test" ng-controller="app.test as vm">
+    <button onclick=" Test(); ">测试</button>
+    <div>
+        <form>
+            <div class="form-group">
+                <label>Name</label>
+            </div>
+            <div class="form-group">
+                <label>pictureUrl</label>
+            </div>
+            <div class="form-group">
+                <label>Url</label>
+            </div>
+            <div class="form-group">
+                <label>ParentId</label>
+            </div>
+        </form>
+        <button class="btn btn-default" onclick="submitTest()">提交</button>
+
+    </div>
+</div>
+
+@section scripts
+{
+    <script type="text/javascript">
+        var Test = function() {
+            $.ajax({
+                url: "/api/services/app/menu/getMenus",
+                type: "Post",
+                success: function(data) {
+                    alert(data.result.length);
+                }
+            });
+        }
+        var submitTest = function() {
+            $.ajax({
+                url: "/api/services/app/menu/createMenu",
+                type: "post",
+                data: { parentId: "0", menuName: "Name", url: "url", pictureUrl: "pictureUrl", id: "1" },
+                dataType:"json",
+                success: function() {
+                    alert("sucess");
+                },
+                error: function(data) {
+                    alert(data);
+                }
+            });
+            //var data1 =  { ParentId: "0", menuName: "Name", Url: "url", PictureUrl: "pictureUrl", Id: "1" };
+            //abp.ajax({
+            //    url: "/api/services/app/menu/CreateMenu",
+            //    data: data1
+            //});
+        }
+    
+          
+        
+    </script>
+}

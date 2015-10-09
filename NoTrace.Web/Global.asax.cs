@@ -12,5 +12,11 @@ namespace NoTrace.Web
             IocManager.Instance.IocContainer.AddFacility<LoggingFacility>(f => f.UseLog4Net().WithConfig("log4net.config"));
             base.Application_Start(sender, e);
         }
+
+        protected override void Application_BeginRequest(object sender, EventArgs e)
+        {
+           var r=  Request;
+            base.Application_BeginRequest(sender, e);
+        }
     }
 }
