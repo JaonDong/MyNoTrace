@@ -39,17 +39,8 @@
             });
         }
         var submitTest = function() {
-            $.ajax({
-                url: "/api/services/app/menu/createMenu",
-                type: "post",
-                data: { parentId: "0", menuName: "Name", url: "url", pictureUrl: "pictureUrl", id: "1" },
-                dataType:"json",
-                success: function() {
-                    alert("sucess");
-                },
-                error: function(data) {
-                    alert(data);
-                }
+            abp.services.app.menu.createMenu({ ParentId: "0", menuName: "Name", Url: "url", PictureUrl: "pictureUrl", Id: "1" }).done(function (data) {
+                
             });
             //var data1 =  { ParentId: "0", menuName: "Name", Url: "url", PictureUrl: "pictureUrl", Id: "1" };
             //abp.ajax({
@@ -57,8 +48,7 @@
             //    data: data1
             //});
         }
-    
-          
-        
+
+
     </script>
 }
