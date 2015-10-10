@@ -22,7 +22,7 @@
             </div>
         </form>
         <button class="btn btn-default" onclick="submitTest()">提交</button>
-
+        <button class="btn btn-danger" onclick="menuList()">获取</button>
     </div>
 </div>
 
@@ -39,16 +39,20 @@
             });
         }
         var submitTest = function() {
-            abp.services.app.menu.createMenu({ ParentId: "0", menuName: "Name", Url: "url", PictureUrl: "pictureUrl", Id: "1" }).done(function (data) {
-                
+            abp.services.app.menu.createMenu({ ParentId: "0", menuName: "Name", Url: "url", PictureUrl: "pictureUrl", Id: "1" }).done(function(data) {
+
             });
-            //var data1 =  { ParentId: "0", menuName: "Name", Url: "url", PictureUrl: "pictureUrl", Id: "1" };
-            //abp.ajax({
-            //    url: "/api/services/app/menu/CreateMenu",
-            //    data: data1
-            //});
         }
 
-
+        var menuList = function() {
+            abp.services.app.menu.getMenus().done(function(data) {
+                    for (var i in data) {
+                     if (data.hasOwnProperty(i)) {
+                        var item = data[i];
+                        alert(item.menuName);
+                    }
+                }
+            });
+        }
     </script>
 }

@@ -90,6 +90,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DtoMappings.cs" />
     <Compile Include="Menus\Dtos\MenuDto.cs" />
     <Compile Include="Menus\IMenuAppService.cs" />
     <Compile Include="Menus\MenuAppService.cs" />

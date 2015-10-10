@@ -23,11 +23,20 @@ namespace NoTrace.Menus
 
         }
 
-        public void CreateMenu(MenuDto dto)
+        public async void CreateMenu(MenuDto dto)
         {
-            var id = dto.ParentId;
+            try
+            {
+                var menu = dto.MapTo<Menu>();
+                await _menuRepository.InsertAsync(menu);
+            }
+            catch (Exception ex)
+            {
 
+                throw;
+            }
         }
+
         public MenuDto GetMenu(int id) { throw  new Exception();}
 
         public IList<MenuDto> GetMenus()

@@ -3948,3 +3948,103 @@ DEBUG 2015-10-10 14:43:37,899 [1    ] Abp.Localization.LocalizationManager     -
 DEBUG 2015-10-10 14:43:37,900 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
 DEBUG 2015-10-10 14:43:38,897 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
 DEBUG 2015-10-10 14:43:39,201 [1    ] Default                                  - Dynamic web api controller is created for type 'NoTrace.Menus.IMenuAppService' with service name 'app/menu'.
+DEBUG 2015-10-10 15:50:29,864 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-10-10 15:50:31,723 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-10-10 15:50:31,727 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.0.3, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 15:50:31,728 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 15:50:31,729 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 15:50:31,729 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 15:50:31,729 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 15:50:31,729 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 15:50:31,729 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceApplicationModule, NoTrace.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 15:50:31,729 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceCoreModule, NoTrace.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 15:50:31,729 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceDataModule, NoTrace.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 15:50:31,730 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.Web.NoTraceWebModule, NoTrace.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 15:50:31,730 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceWebApiModule, NoTrace.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 15:50:31,733 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-10-10 15:50:34,535 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-10-10 15:50:34,538 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-10-10 15:50:34,589 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NoTrace
+DEBUG 2015-10-10 15:50:34,589 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-10-10 15:50:35,547 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-10-10 15:50:35,766 [1    ] Default                                  - Dynamic web api controller is created for type 'NoTrace.Menus.IMenuAppService' with service name 'app/menu'.
+DEBUG 2015-10-10 16:03:57,444 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-10-10 16:03:59,420 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-10-10 16:03:59,423 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.0.3, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:03:59,424 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:03:59,424 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:03:59,425 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:03:59,425 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:03:59,425 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:03:59,425 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceApplicationModule, NoTrace.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:03:59,425 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceCoreModule, NoTrace.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:03:59,425 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceDataModule, NoTrace.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:03:59,425 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.Web.NoTraceWebModule, NoTrace.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:03:59,425 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceWebApiModule, NoTrace.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:03:59,428 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-10-10 16:04:01,555 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-10-10 16:04:01,560 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-10-10 16:04:01,627 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NoTrace
+DEBUG 2015-10-10 16:04:01,627 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-10-10 16:04:02,686 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-10-10 16:04:02,925 [1    ] Default                                  - Dynamic web api controller is created for type 'NoTrace.Menus.IMenuAppService' with service name 'app/menu'.
+DEBUG 2015-10-10 16:25:23,146 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-10-10 16:25:24,888 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-10-10 16:25:24,891 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.0.3, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:25:24,893 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:25:24,893 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:25:24,894 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:25:24,894 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:25:24,894 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:25:24,894 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceApplicationModule, NoTrace.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:25:24,894 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceCoreModule, NoTrace.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:25:24,894 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceDataModule, NoTrace.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:25:24,894 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.Web.NoTraceWebModule, NoTrace.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:25:24,894 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceWebApiModule, NoTrace.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:25:24,898 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-10-10 16:25:26,910 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-10-10 16:25:26,914 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-10-10 16:25:26,945 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NoTrace
+DEBUG 2015-10-10 16:25:26,945 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-10-10 16:25:28,060 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-10-10 16:25:28,138 [1    ] Default                                  - Dynamic web api controller is created for type 'NoTrace.Menus.IMenuAppService' with service name 'app/menu'.
+DEBUG 2015-10-10 16:27:49,888 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-10-10 16:27:51,084 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-10-10 16:27:51,088 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.0.3, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:27:51,089 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:27:51,089 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:27:51,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:27:51,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:27:51,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:27:51,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceApplicationModule, NoTrace.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:27:51,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceCoreModule, NoTrace.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:27:51,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceDataModule, NoTrace.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:27:51,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.Web.NoTraceWebModule, NoTrace.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:27:51,090 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceWebApiModule, NoTrace.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:27:51,093 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-10-10 16:27:52,619 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-10-10 16:27:52,624 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-10-10 16:27:52,625 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NoTrace
+DEBUG 2015-10-10 16:27:52,626 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-10-10 16:27:53,607 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-10-10 16:27:53,656 [1    ] Default                                  - Dynamic web api controller is created for type 'NoTrace.Menus.IMenuAppService' with service name 'app/menu'.
+DEBUG 2015-10-10 16:35:23,213 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2015-10-10 16:35:24,887 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2015-10-10 16:35:24,890 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=0.7.0.3, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:35:24,891 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:35:24,891 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:35:24,891 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:35:24,891 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=0.7.0.4, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:35:24,892 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:35:24,892 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceApplicationModule, NoTrace.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:35:24,892 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceCoreModule, NoTrace.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:35:24,892 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceDataModule, NoTrace.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:35:24,892 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.Web.NoTraceWebModule, NoTrace.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:35:24,892 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NoTrace.NoTraceWebApiModule, NoTrace.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2015-10-10 16:35:24,895 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+DEBUG 2015-10-10 16:35:26,924 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2015-10-10 16:35:26,928 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2015-10-10 16:35:26,955 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NoTrace
+DEBUG 2015-10-10 16:35:26,955 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2015-10-10 16:35:27,970 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 0 classes defines auto mapping attributes
+DEBUG 2015-10-10 16:35:28,050 [1    ] Default                                  - Dynamic web api controller is created for type 'NoTrace.Menus.IMenuAppService' with service name 'app/menu'.
