@@ -8,11 +8,11 @@ using NoTrace.Menus.Dtos;
 
 namespace NoTrace.Menus
 {
-    public class MenuAppService:ApplicationService,IMenuAppService
+    public class MenuAppService : ApplicationService, IMenuAppService
     {
         private readonly IRepository<Menu> _menuRepository;
-        
-        public MenuAppService(IRepository<Menu> menuRepository )
+
+        public MenuAppService(IRepository<Menu> menuRepository)
         {
             _menuRepository = menuRepository;
         }
@@ -25,25 +25,17 @@ namespace NoTrace.Menus
 
         public async void CreateMenu(MenuDto dto)
         {
-            try
-            {
-                var menu = dto.MapTo<Menu>();
-                await _menuRepository.InsertAsync(menu);
-            }
-            catch (Exception ex)
-            {
-
-                throw;
-            }
+            var menu = dto.MapTo<Menu>();
+            await _menuRepository.InsertAsync(menu);
         }
 
-        public MenuDto GetMenu(int id) { throw  new Exception();}
+        public MenuDto GetMenu(int id) { throw new Exception(); }
 
         public IList<MenuDto> GetMenus()
         {
             return _menuRepository.GetAllList().MapTo<List<MenuDto>>();
         }
-        public IList<MenuDto> GetMenuAndChilds(int id) { throw new Exception();}
+        public IList<MenuDto> GetMenuAndChilds(int id) { throw new Exception(); }
 
         public void SelectMenu(MenuDto menu)
         {

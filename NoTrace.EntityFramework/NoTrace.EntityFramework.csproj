@@ -121,6 +121,10 @@
     <Compile Include="Migrations\201509291325438_AddMenus.Designer.cs">
       <DependentUpon>201509291325438_AddMenus.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201510210834343_UpdateMenu.cs" />
+    <Compile Include="Migrations\201510210834343_UpdateMenu.Designer.cs">
+      <DependentUpon>201510210834343_UpdateMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NoTraceDataModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -150,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201509291325438_AddMenus.resx">
       <DependentUpon>201509291325438_AddMenus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510210834343_UpdateMenu.resx">
+      <DependentUpon>201510210834343_UpdateMenu.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

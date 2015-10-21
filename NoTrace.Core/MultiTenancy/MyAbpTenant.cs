@@ -21,7 +21,7 @@ namespace NoTrace.MultiTenancy
         public virtual bool IsActive { get; set; }
         #endregion
 
-        public MyAbpTenant()
+        protected MyAbpTenant()
         {
             IsActive = true;
         }
