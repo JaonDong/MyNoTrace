@@ -1,10 +1,10 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    Layout = null;
 }
 
-<h2>Index</h2>
-<div id="test" ng-controller="app.test as vm">
+
+<div id="test" class="hidden" ng-controller="app.test as vm" style="display: none;">
     <button onclick=" Test(); ">测试</button>
     <div>
         <form>
@@ -26,18 +26,14 @@
     </div>
 </div>
 
+@Html.Partial("_LeftBar")
+
+
+
 @section scripts
 {
     <script type="text/javascript">
-        var Test = function() {
-            $.ajax({
-                url: "/api/services/app/menu/getMenus",
-                type: "Post",
-                success: function(data) {
-                    alert(data.result.length);
-                }
-            });
-        }
+ 
         var submitTest = function() {
             abp.services.app.menu.createMenu({ ParentId: "0", menuName: "Name", Url: "url", PictureUrl: "pictureUrl", Id: "1" }).done(function(data) {
 
